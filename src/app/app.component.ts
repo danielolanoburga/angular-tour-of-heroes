@@ -12,8 +12,13 @@ export class Hero {
   `
   <h1>{{title}}</h1>
   <h2>{{hero.name}} details!</h2>
-  <div>id: {{hero.id}}</div>
-  <div>name: {{hero.name}}</div>
+  <div>
+  	<label>id: {{hero.id}}</label>
+  </div>
+  <div>
+  	<label>name: {{hero.name}}</label>
+  	<input [(ngModel)]="hero.name" placeholder="name">
+  </div>
   `,
   styleUrls: ['./app.component.css']
 })
